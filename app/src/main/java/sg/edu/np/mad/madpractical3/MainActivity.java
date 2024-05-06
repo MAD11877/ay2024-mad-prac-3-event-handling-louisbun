@@ -56,5 +56,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // week 3 challenge
+        Button btnMessage = findViewById(R.id.button2);
+
+        btnMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent message = new Intent(MainActivity.this, MessageGroup.class);
+                startActivity(message);
+            }
+        });
+
     }
 }
